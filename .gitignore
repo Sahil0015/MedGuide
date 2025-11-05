@@ -62,6 +62,7 @@ vectorstore/
 # -------------------------------
 
 data/knowledge_base/*
+app/data/*
 
 # -------------------------------
 # Archives and temporary files
