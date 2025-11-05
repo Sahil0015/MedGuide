@@ -1,0 +1,15 @@
+agno
+python-dotenv
+streamlit
+openai
+pymupdf
+ddgs
+cohere 
+lancedb
+tantivy
+langchain
+langchain-openai 
+langchain-community
+
+redis
+redisvl

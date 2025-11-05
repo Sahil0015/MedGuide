@@ -1,0 +1,73 @@
+# ============================================
+# 🧠 MedGuide Project .gitignore
+# ============================================
+
+# -------------------------------
+# Python cache and compiled files
+# -------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# -------------------------------
+# Virtual environment folders
+# -------------------------------
+venv/
+env/
+.venv/
+
+# -------------------------------
+# Environment & credentials
+# -------------------------------
+.env
+.env.*
+*.env
+
+# -------------------------------
+# IDE / Editor / System files
+# -------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# -------------------------------
+# Streamlit cache / temp files
+# -------------------------------
+.streamlit/
+.cache/
+__results__/
+*.log
+
+# -------------------------------
+# Vector DB & embeddings
+# -------------------------------
+vectordb/*.db
+vectordb/*.json
+vectorstore/
+*.pkl
+*.pt
+*.h5
+*.bin
+*.npy
+*.npz
+*.onnx
+
+# -------------------------------
+# Data handling
+# -------------------------------
+
+data/knowledge_base/*
+
+# -------------------------------
+# Archives and temporary files
+# -------------------------------
+*.zip
+*.tar
+*.gz
+*.tmp
+*.bak
