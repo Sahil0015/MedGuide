@@ -1,0 +1,15 @@
+venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+.git
+.gitignore
+
+# Data and generated artifacts
+/data/knowledge_base/
+/data/uploads/
+/data/lancedb/
+/data/agent_memory.db
