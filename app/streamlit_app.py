@@ -11,7 +11,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 # --- Local imports ---
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from utils.pdf_extractor import extract_text_from_pdf
 from agents.document_extraction_agent import document_extraction_agent
 from agents.analyzer_agent import analyzer_agent
@@ -156,7 +156,7 @@ with st.sidebar:
     if reset_clicked:
         for key in ["processed", "processed_file", "final_text", "kb_ready", "final_displayed"]:
             st.session_state[key] = False if key == "processed" else None
-        st.experimental_rerun()
+        st.rerun()
 
 st.title("🩺 MedGuide: AI Health Companion")
 
