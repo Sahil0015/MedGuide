@@ -24,6 +24,8 @@ MedGuide/
 │
 ├── app/
 │   ├── streamlit_app.py        # Main Streamlit UI
+│   ├── app.py                  # FastAPI REST backend
+│   ├── main.py                 # CLI pipeline for local testing
 │   ├── data/                   # Stores processed text, LanceDB, and uploads
 │
 ├── agents/
@@ -124,6 +126,8 @@ streamlit run app/streamlit_app.py
 | File | Purpose |
 |------|----------|
 | `app/streamlit_app.py` | Main Streamlit interface |
+| `app/app.py` | FastAPI REST backend (upload, process, chat endpoints) |
+| `app/main.py` | CLI pipeline runner for local testing |
 | `vectordb/create_vector_db.py` | Creates LanceDB vector store |
 | `utils/pdf_extractor.py` | PDF text extraction |
 | `utils/pdf_to_txt.py` | Converts PDF to text |
@@ -163,10 +167,11 @@ __pycache__/
 
 ## 💡 Future Enhancements
 
-- Add **FastAPI backend** for cloud deployment.  
 - Expand **multi-language report interpretation**.  
 - Support **FHIR / HL7** medical data formats.  
-- Implement **persistent chat memory** for report history.  
+- Implement **persistent chat memory** across sessions and report history.  
+- Add **user authentication** for personalized report management.  
+- Deploy as a **Docker container** on cloud platforms (AWS, GCP, Azure).
 
 ---
 
