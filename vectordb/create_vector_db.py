@@ -63,7 +63,7 @@ def create_vectordb_from_pdfs_and_outputs(
         uri=str(lancedb_dir),
         table_name=table_name,
         embedder=OpenAIEmbedder(id="text-embedding-3-small"),
-        search_type=search_type.hybrid,
+        search_type=search_type,
         reranker=CohereReranker(model="rerank-multilingual-v3.0") if use_reranker else None,
     )
 
