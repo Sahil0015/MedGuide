@@ -106,7 +106,7 @@ async def generate_final_report(page_outputs: list[str]):
 
         print("🧩 Synthesizing final report...")
         resp = await final_report_agent.arun(prompt)
-        final_text = resp.content.strip()
+        final_text = (resp.content or "").strip()
 
         # Save the combined final report
         final_path = OUTPUT_DIR / "final_report.txt"
