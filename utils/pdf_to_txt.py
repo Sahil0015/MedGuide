@@ -1,5 +1,5 @@
 import os
-import fitz  # PyMuPDF
+import pymupdf as fitz  # PyMuPDF
 
 def convert_all_pdfs_to_txt():
     """
